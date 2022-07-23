@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Norse Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norse Regular'), url('Norse.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Norse Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norse Bold'), url('Norsebold.woff') format('woff');
+}
+
+
+* {
+    font-size: 0.625rem;
+}
+
+body {
+    max-width: 124rem;
+    margin-inline: auto;
+    background-color: rgb(97, 80, 54);
+
+    h1 {
+        font-family: 'Norse Bold';
+        font-size: 6rem;
+        text-align: center;
+        color: goldenrod;
+    }
+}
+
+.card-section {
+    margin-top: 12rem;
+    margin-inline: auto;
+    max-width: 100rem;
+    display: grid;
+    grid: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    .card {
+        text-align: center;
+        margin-inline: auto;
+        margin-block: 2.4rem;
+        display: block;
+        background: linear-gradient(rgb(197, 174, 123), rgb(151, 133, 102));
+        border-radius: 0.6rem;
+        width: 28rem;
+
+        a {
+            font-size: 2rem;
+            font-family: 'Norse Regular';
+            color: gold;
+            text-decoration-line: none;
+            background-color: transparent;
+        }
+
+        h3 {
+            background-color: transparent;
+            margin-bottom: 1.6rem;
+        }
+
+        img {
+            margin: 0.8rem;
+            width: 26rem;
+            border-radius: 0.6rem;
+        }
+    }
+}

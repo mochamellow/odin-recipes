@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@font-face {
+  font-family: 'Norse Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Norse Regular"), url("Norse.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Norse Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Norse Bold"), url("Norsebold.woff") format("woff");
+}
+
+* {
+  font-size: 0.625rem;
+}
+
+body {
+  max-width: 124rem;
+  margin-inline: auto;
+  background-color: #615036;
+}
+
+body h1 {
+  font-family: 'Norse Bold';
+  font-size: 6rem;
+  text-align: center;
+  color: goldenrod;
+}
+
+.card-section {
+  margin-top: 12rem;
+  margin-inline: auto;
+  max-width: 100rem;
+  display: -ms-grid;
+  display: grid;
+  grid: 1rem;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.card-section .card {
+  text-align: center;
+  margin-inline: auto;
+  margin-block: 2.4rem;
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5ae7b), to(#978566));
+  background: linear-gradient(#c5ae7b, #978566);
+  border-radius: 0.6rem;
+  width: 28rem;
+}
+
+.card-section .card a {
+  font-size: 2rem;
+  font-family: 'Norse Regular';
+  color: gold;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  background-color: transparent;
+}
+
+.card-section .card h3 {
+  background-color: transparent;
+  margin-bottom: 1.6rem;
+}
+
+.card-section .card img {
+  margin: 0.8rem;
+  width: 26rem;
+  border-radius: 0.6rem;
+}
+/*# sourceMappingURL=styles.css.map */
